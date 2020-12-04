@@ -1,0 +1,657 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>N1_SimuladorBancario</name>
+    </assembly>
+    <members>
+        <member name="T:N1_SimuladorBancario.GUI.ControlDatosCliente">
+            <summary>
+            Control con los datos del propietario de la cuenta bancaria.
+            </summary>
+        </member>
+        <member name="F:N1_SimuladorBancario.GUI.ControlDatosCliente.principal">
+            <summary>
+            Referencia al formulario principal de la aplicación.
+            </summary>
+        </member>
+        <member name="M:N1_SimuladorBancario.GUI.ControlDatosCliente.#ctor(N1_SimuladorBancario.Principal)">
+            <summary>
+            Crea una instancia de `ControlDatosCliente`.
+            </summary>
+            <param name="ventanaPrincipal">Referebcua al formulario principal.</param>
+        </member>
+        <member name="M:N1_SimuladorBancario.GUI.ControlDatosCliente.ActualizarNombre(System.String)">
+            <summary>
+            Actualiza el nombre del propietario de la cuenta bancaria.
+            </summary>
+            <param name="nuevoNombre">Nombre del propietario de la cuenta bancaria.</param>
+        </member>
+        <member name="M:N1_SimuladorBancario.GUI.ControlDatosCliente.ActualizarCedula(System.String)">
+            <summary>
+            Actualiza el número de la cédula del propietario de la cuenta bancaria.
+            </summary>
+            <param name="nuevaCedula"></param>
+        </member>
+        <member name="M:N1_SimuladorBancario.GUI.ControlDatosCliente.ActualizarMes(System.Int32)">
+            <summary>
+            Actualiza el número de mes de la simulación.
+            </summary>
+            <param name="mes">Número del mes.</param>
+        </member>
+        <member name="M:N1_SimuladorBancario.GUI.ControlDatosCliente.btnAvanzar_Click(System.Object,System.EventArgs)">
+            <summary>
+            Avanza en una unidad (mes) la simulación.
+            </summary>
+            <param name="sender">Actividador del evento.</param>
+            <param name="e">Datos del evento.</param>
+        </member>
+        <member name="F:N1_SimuladorBancario.GUI.ControlDatosCliente.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:N1_SimuladorBancario.GUI.ControlDatosCliente.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:N1_SimuladorBancario.GUI.ControlDatosCliente.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:N1_SimuladorBancario.GUI.ControlOpciones">
+            <summary>
+            Controles para abrir un CDT, consigar y retirar de las cuentas de ahorro y corriente.
+            </summary>
+        </member>
+        <member name="F:N1_SimuladorBancario.GUI.ControlOpciones.principal">
+            <summary>
+            Referencia al formulario principal de la aplicación.
+            </summary>
+        </member>
+        <member name="M:N1_SimuladorBancario.GUI.ControlOpciones.btnCDTAbrir_Click(System.Object,System.EventArgs)">
+            <summary>
+            Abre un nuevo CDT.
+            </summary>
+            <param name="sender">Actividador del evento.</param>
+            <param name="e">Datos del evento.</param>
+        </member>
+        <member name="M:N1_SimuladorBancario.GUI.ControlOpciones.btnCDTCerrar_Click(System.Object,System.EventArgs)">
+            <summary>
+            Cierra el CDT.
+            </summary>
+            <param name="sender">Actividador del evento.</param>
+            <param name="e">Datos del evento.</param>
+        </member>
+        <member name="M:N1_SimuladorBancario.GUI.ControlOpciones.btnCorrienteConsignar_Click(System.Object,System.EventArgs)">
+            <summary>
+            Consigna una cantidad de dinero en la cuenta de corriente.
+            </summary>
+            <param name="sender">Actividador del evento.</param>
+            <param name="e">Datos del evento.</param>
+        </member>
+        <member name="M:N1_SimuladorBancario.GUI.ControlOpciones.btnCorrienteRetirar_Click(System.Object,System.EventArgs)">
+            <summary>
+            Retira una cantidad de dinero de la cuenta corriente.
+            </summary>
+            <param name="sender">Actividador del evento.</param>
+            <param name="e">Datos del evento.</param>
+        </member>
+        <member name="M:N1_SimuladorBancario.GUI.ControlOpciones.btnAhorrosConsignar_Click(System.Object,System.EventArgs)">
+            <summary>
+            Consigna una cantidad de dinero en la cuenta de ahorros.
+            </summary>
+            <param name="sender">Actividador del evento.</param>
+            <param name="e">Datos del evento.</param>
+        </member>
+        <member name="M:N1_SimuladorBancario.GUI.ControlOpciones.btnAhorrosRetirar_Click(System.Object,System.EventArgs)">
+            <summary>
+            Retira una cantidad de dinero de la cuenta de ahorros.
+            </summary>
+            <param name="sender">Actividador del evento.</param>
+            <param name="e">Datos del evento.</param>
+        </member>
+        <member name="M:N1_SimuladorBancario.GUI.ControlOpciones.btnOpcion1_Click(System.Object,System.EventArgs)">
+            <summary>
+            Activa el punto de extensión (1).
+            </summary>
+            <param name="sender">Actividador del evento.</param>
+            <param name="e">Datos del evento.</param>
+        </member>
+        <member name="M:N1_SimuladorBancario.GUI.ControlOpciones.btnOpcion2_Click(System.Object,System.EventArgs)">
+            <summary>
+            Activa el punto de extensión (2).
+            </summary>
+            <param name="sender">Actividador del evento.</param>
+            <param name="e">Datos del evento.</param>
+        </member>
+        <member name="F:N1_SimuladorBancario.GUI.ControlOpciones.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:N1_SimuladorBancario.GUI.ControlOpciones.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:N1_SimuladorBancario.GUI.ControlOpciones.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:N1_SimuladorBancario.GUI.ControlSaldos">
+            <summary>
+            Representa el control para la visualización de los saldos de las cuentas.
+            </summary>
+        </member>
+        <member name="M:N1_SimuladorBancario.GUI.ControlSaldos.#ctor">
+            <summary>
+            Crea una instancia de `ControlSaldos`.
+            </summary>
+        </member>
+        <member name="M:N1_SimuladorBancario.GUI.ControlSaldos.ActualizarSaldoActual(System.Decimal)">
+            <summary>
+            Actualiza el saldo actual y muestra nuevos valores en los controles correspondientes.
+            </summary>
+            <param name="nuevoSaldo">Nuevo saldo de la cuenta bancaria.</param>
+        </member>
+        <member name="M:N1_SimuladorBancario.GUI.ControlSaldos.ActualizarSaldoAhorros(System.Decimal)">
+            <summary>
+            Actualiza el saldo actual de la cuenta de ahorros 
+            y muestra nuevos valores en los controles correspondientes.
+            </summary>
+            <param name="nuevoSaldo"></param>
+        </member>
+        <member name="M:N1_SimuladorBancario.GUI.ControlSaldos.ActualizarSaldoCorriente(System.Decimal)">
+            <summary>
+            Actualiza el saldo actual de la cuenta corriente 
+            y muestra nuevos valores en los controles correspondientes.
+            </summary>
+            <param name="nuevoSaldo"></param>
+        </member>
+        <member name="M:N1_SimuladorBancario.GUI.ControlSaldos.ActualizarSaldoCDT(System.Decimal)">
+            <summary>
+            Actualiza el saldo actual del CDT y muestra nuevos 
+            valores en los controles correspondientes.
+            </summary>
+            <param name="nuevoSaldo"></param>
+        </member>
+        <member name="F:N1_SimuladorBancario.GUI.ControlSaldos.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:N1_SimuladorBancario.GUI.ControlSaldos.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:N1_SimuladorBancario.GUI.ControlSaldos.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:N1_SimuladorBancario.Modelo.CDT">
+            <summary>
+            Entidad que representa el funcionamiento de un CDT.
+            </summary>
+        </member>
+        <member name="F:N1_SimuladorBancario.Modelo.CDT.valorInvertido">
+            <summary>
+            Valor de la inversión.
+            </summary>
+        </member>
+        <member name="F:N1_SimuladorBancario.Modelo.CDT.interesMensual">
+            <summary>
+            Interés mensual sobre la inversión.
+            </summary>
+        </member>
+        <member name="F:N1_SimuladorBancario.Modelo.CDT.mesApertura">
+            <summary>
+            Representa el mes de apertura.
+            </summary>
+        </member>
+        <member name="P:N1_SimuladorBancario.Modelo.CDT.ValorInvertido">
+            <summary>
+            Accede y modifica el valor invertido en el CDT.
+            </summary>
+        </member>
+        <member name="P:N1_SimuladorBancario.Modelo.CDT.InteresMensual">
+            <summary>
+            Accede al interés sobre la inversión.
+            </summary>
+        </member>
+        <member name="M:N1_SimuladorBancario.Modelo.CDT.#ctor">
+            <summary>
+            Crea una instancia de `CDT` con valores por defecto.
+            </summary>
+        </member>
+        <member name="M:N1_SimuladorBancario.Modelo.CDT.Invertir(System.Decimal,System.Decimal,System.Int32)">
+            <summary>
+            Inicia una inversión.
+            </summary>
+            <param name="valor">Cantidad de dinero a invertir.</param>
+            <param name="interes">Interés sobre la inversión.</param>
+            <param name="numeroMes">Número del mes de la inversión.</param>
+        </member>
+        <member name="M:N1_SimuladorBancario.Modelo.CDT.ValorPresente(N1_SimuladorBancario.Utilidades.Mes)">
+            <summary>
+            Calcula el valor presente de la inversión.
+            </summary>
+            <param name="mesActual">Número del més sobre el que se calculara el saldo.</param>
+            <returns>Saldo del CDT hasta la fecha.</returns>
+        </member>
+        <member name="M:N1_SimuladorBancario.Modelo.CDT.Cerrar(N1_SimuladorBancario.Utilidades.Mes)">
+            <summary>
+            Cierra el CDT.
+            </summary>
+            <param name="mesActual">Mes en el que se cierrar el CDT.</param>
+            <returns>Valor del cierre del CDT.</returns>
+        </member>
+        <member name="T:N1_SimuladorBancario.Modelo.CuentaAhorros">
+            <summary>
+            Entidad que representa una cuenta de ahorros del modelo.
+            </summary>
+        </member>
+        <member name="F:N1_SimuladorBancario.Modelo.CuentaAhorros.saldo">
+            <summary>
+            Saldo de la cuenta de ahorros.
+            </summary>
+        </member>
+        <member name="F:N1_SimuladorBancario.Modelo.CuentaAhorros.interesMensual">
+            <summary>
+            Interés mensual de la cuenta de ahorros.
+            </summary>
+        </member>
+        <member name="P:N1_SimuladorBancario.Modelo.CuentaAhorros.InteresMensual">
+            <summary>
+            Accede el interés mensual de la cuenta de ahorros.
+            </summary>
+        </member>
+        <member name="P:N1_SimuladorBancario.Modelo.CuentaAhorros.Saldo">
+            <summary>
+            Accede y modifica el saldo de la cuenta de ahorros.
+            </summary>
+        </member>
+        <member name="M:N1_SimuladorBancario.Modelo.CuentaAhorros.#ctor">
+            <summary>
+            Inicializa una instancia de `CuentaAhorros` con valores por defecto.
+            </summary>
+        </member>
+        <member name="M:N1_SimuladorBancario.Modelo.CuentaAhorros.ConsigarValor(System.Decimal)">
+            <summary>
+            Consigna un valor en la cuenta.
+            </summary>
+            <param name="valor">Cantidad de dinero a consignar en la cuenta.</param>
+        </member>
+        <member name="M:N1_SimuladorBancario.Modelo.CuentaAhorros.RetirarValor(System.Decimal)">
+            <summary>
+            Retira un valor de la cuenta de ahorros.
+            </summary>
+            <param name="valor">Cantidad de dinero a retirar.</param>
+        </member>
+        <member name="M:N1_SimuladorBancario.Modelo.CuentaAhorros.ActualizarSaldoTransicionMes">
+            <summary>
+            Actualiza el saldo cuando se transita al siguiente mes.
+            </summary>
+        </member>
+        <member name="T:N1_SimuladorBancario.Modelo.CuentaBancaria">
+            <summary>
+            Entidad que simula una cuenta bancaria.
+            </summary>
+        </member>
+        <member name="F:N1_SimuladorBancario.Modelo.CuentaBancaria.cedula">
+            <summary>
+            Cédula del propietario de la cuenta.
+            </summary>
+        </member>
+        <member name="F:N1_SimuladorBancario.Modelo.CuentaBancaria.nombre">
+            <summary>
+            Nombre del propietario de la cuenta.
+            </summary>
+        </member>
+        <member name="F:N1_SimuladorBancario.Modelo.CuentaBancaria.mesActual">
+            <summary>
+            Mes actual de la simulación.
+            </summary>
+        </member>
+        <member name="F:N1_SimuladorBancario.Modelo.CuentaBancaria.corriente">
+            <summary>
+            Cuenta corrienta de esta cuenta bancaria.
+            </summary>
+        </member>
+        <member name="F:N1_SimuladorBancario.Modelo.CuentaBancaria.ahorros">
+            <summary>
+            Cuenta de ahorros de esta cuenta de bancaria.
+            </summary>
+        </member>
+        <member name="F:N1_SimuladorBancario.Modelo.CuentaBancaria.inversion">
+            <summary>
+            CDT de esta cuenta bancaria.
+            </summary>
+        </member>
+        <member name="P:N1_SimuladorBancario.Modelo.CuentaBancaria.Nombre">
+            <summary>
+            Accede y modifica el nombre del propietario de esta cuenta bancaria.
+            </summary>
+        </member>
+        <member name="P:N1_SimuladorBancario.Modelo.CuentaBancaria.Cedula">
+            <summary>
+            Accede y modifica la cédula del propietario de esta cuenta bancaria.
+            </summary>
+        </member>
+        <member name="P:N1_SimuladorBancario.Modelo.CuentaBancaria.MesActual">
+            <summary>
+            Accede y modifica el mes actual de la simulación.
+            </summary>
+        </member>
+        <member name="P:N1_SimuladorBancario.Modelo.CuentaBancaria.Ahorros">
+            <summary>
+            Accede y modifica la cuenta de ahorros de esta cuenta bancaria.
+            </summary>
+        </member>
+        <member name="P:N1_SimuladorBancario.Modelo.CuentaBancaria.Corriente">
+            <summary>
+            Accede y modifica la cuenta corriente de esta cuenta bancaria.
+            </summary>
+        </member>
+        <member name="P:N1_SimuladorBancario.Modelo.CuentaBancaria.Inversion">
+            <summary>
+            Accede y modifica el CDT de esta cuenta bancaria.
+            </summary>
+        </member>
+        <member name="M:N1_SimuladorBancario.Modelo.CuentaBancaria.#ctor(System.String,System.String)">
+            <summary>
+            Inicializa una instancia de `CuentaBancaria` con la cédula y el nombre del propietario de la cuenta.
+            </summary>
+            <param name="cedula">Número de cédula del propietario de la cuenta.</param>
+            <param name="nombre">Nombre completo del propietario de la cuenta.</param>
+        </member>
+        <member name="M:N1_SimuladorBancario.Modelo.CuentaBancaria.InvertirCDT(System.Decimal,System.Decimal)">
+            <summary>
+            Inicia la inversión en un CDT.
+            </summary>
+            <param name="monto">Monto de la inversión en el CDT.</param>
+            <param name="interesMensual">Interés sobre la inversión del CDT.</param>
+        </member>
+        <member name="M:N1_SimuladorBancario.Modelo.CuentaBancaria.ConsignarCuentaCorriente(System.Decimal)">
+            <summary>
+            Consigna una cantidad de dinero en la cuenta corriente.
+            </summary>
+            <param name="valor"></param>
+        </member>
+        <member name="M:N1_SimuladorBancario.Modelo.CuentaBancaria.ConsignarCuentaAhorro(System.Decimal)">
+            <summary>
+            Consigna una cantidad de dinero en la cuenta de ahorros.
+            </summary>
+            <param name="valor"></param>
+        </member>
+        <member name="M:N1_SimuladorBancario.Modelo.CuentaBancaria.CerrarCDT">
+            <summary>
+            Cierra el CDT.
+            </summary>
+        </member>
+        <member name="M:N1_SimuladorBancario.Modelo.CuentaBancaria.RetirarCuentaCorriente(System.Decimal)">
+            <summary>
+            Retira una cantidad de dinero de la cuenta corriente.
+            </summary>
+            <param name="valor">Cantidad de dinero a retirar.</param>
+        </member>
+        <member name="M:N1_SimuladorBancario.Modelo.CuentaBancaria.RetirarCuentaAhorro(System.Decimal)">
+            <summary>
+            Retira una cantidad de dinero de la cuenta de ahorros.
+            </summary>
+            <param name="valor"></param>
+        </member>
+        <member name="M:N1_SimuladorBancario.Modelo.CuentaBancaria.CalcularSaldoTotal">
+            <summary>
+            Calcula el saldo total sobre las tres cuentas.
+            </summary>
+            <returns>Cantidad de dinero en la cuenta bancaria.</returns>
+        </member>
+        <member name="M:N1_SimuladorBancario.Modelo.CuentaBancaria.AvanzarMesSimulacion">
+            <summary>
+            Avanza en un mes la simulación de las tres cuentas.
+            </summary>
+        </member>
+        <member name="M:N1_SimuladorBancario.Modelo.CuentaBancaria.PuntoExtension1">
+            <summary>
+            Punto de extensión (1).
+            </summary>
+            <returns>Valor de respuesta del método de extensión.</returns>
+        </member>
+        <member name="M:N1_SimuladorBancario.Modelo.CuentaBancaria.PuntoExtension2">
+            <summary>
+            Punto de extensión (2).
+            </summary>
+            <returns>Valor de respuesta del método de extensión.</returns>
+        </member>
+        <member name="T:N1_SimuladorBancario.Modelo.CuentaCorriente">
+            <summary>
+            Entidad que modela el funcionamiento de una cuenta corriente.
+            </summary>
+        </member>
+        <member name="F:N1_SimuladorBancario.Modelo.CuentaCorriente.saldo">
+            <summary>
+            Saldo de la cuenta corriente.
+            </summary>
+        </member>
+        <member name="P:N1_SimuladorBancario.Modelo.CuentaCorriente.Saldo">
+            <summary>
+            Representa el saldo de la cuenta corriente.
+            </summary>
+        </member>
+        <member name="M:N1_SimuladorBancario.Modelo.CuentaCorriente.#ctor">
+            <summary>
+            Inicializa una instancia de `CuentaCorriente` con saldo en cero.
+            </summary>
+        </member>
+        <member name="M:N1_SimuladorBancario.Modelo.CuentaCorriente.ConsignarValor(System.Decimal)">
+            <summary>
+            Consigna un valor en la cuenta corriente.
+            </summary>
+            <param name="valor">Valor a consignar en la cuenta.</param>
+        </member>
+        <member name="M:N1_SimuladorBancario.Modelo.CuentaCorriente.RetirarValor(System.Decimal)">
+            <summary>
+            Retira un valor de la cuenta corriente.
+            </summary>
+            <param name="valor">Valor a retirar de la cuenta.</param>
+        </member>
+        <member name="T:N1_SimuladorBancario.Principal">
+            <summary>
+            Representa el formulario principal de la aplicación.
+            </summary>
+        </member>
+        <member name="F:N1_SimuladorBancario.Principal.ctlDatosCliente">
+            <summary>
+            Control con los datos del cliente.
+            </summary>
+        </member>
+        <member name="F:N1_SimuladorBancario.Principal.ctlOpciones">
+            <summary>
+            Control con las operaciones posibles de las cuentas.
+            </summary>
+        </member>
+        <member name="F:N1_SimuladorBancario.Principal.ctlSaldos">
+            <summary>
+            Control que contiene los controles para la visualización de los saldos de la cuenta.
+            </summary>
+        </member>
+        <member name="F:N1_SimuladorBancario.Principal.cuentaBancaria">
+            <summary>
+            Cuenta bancaria.
+            </summary>
+        </member>
+        <member name="M:N1_SimuladorBancario.Principal.#ctor(N1_SimuladorBancario.Modelo.CuentaBancaria)">
+            <summary>
+            Crea instancia de `Principal` con una cuenta bancaria.
+            </summary>
+            <param name="cuentaBancaria">Cuenta bancaria a manipular.</param>
+        </member>
+        <member name="M:N1_SimuladorBancario.Principal.CargarControlesPersonalizados">
+            <summary>
+            Carga los controles de la interfaz.
+            </summary>
+        </member>
+        <member name="M:N1_SimuladorBancario.Principal.ActualizarCliente">
+            <summary>
+            Actualiza los datos del cliente cuando ocurren cambios.
+            </summary>
+        </member>
+        <member name="M:N1_SimuladorBancario.Principal.InvertirCDT(System.Decimal,System.Decimal)">
+            <summary>
+            Abre un nuevo CDT.
+            </summary>
+            <param name="valor">Cantidad de dinero a invertir.</param>
+            <param name="interes">Interés sobre la inversión.</param>
+        </member>
+        <member name="M:N1_SimuladorBancario.Principal.CerrarCDT">
+            <summary>
+            Cierra el CDT.
+            </summary>
+        </member>
+        <member name="M:N1_SimuladorBancario.Principal.RetirarAhorros(System.Decimal)">
+            <summary>
+            Retira una cantidad de dinero de la cuenta de ahorros.
+            </summary>
+            <param name="valor">Cantidad de dinero a retirar.</param>
+        </member>
+        <member name="M:N1_SimuladorBancario.Principal.ConsignarAhorros(System.Decimal)">
+            <summary>
+            Consigna una cantidad de dinero sobre la cuenta de ahorros.
+            </summary>
+            <param name="valor">Cantidad de dinero a consignar.</param>
+        </member>
+        <member name="M:N1_SimuladorBancario.Principal.RetirarCorriente(System.Decimal)">
+            <summary>
+            Retira una cantidad de dinero de la cuenta corriente.
+            </summary>
+            <param name="valor"></param>
+        </member>
+        <member name="M:N1_SimuladorBancario.Principal.ConsignarCorriente(System.Decimal)">
+            <summary>
+            Consigna una cantidad de dinero de la cuenta corriente.
+            </summary>
+            <param name="valor"></param>
+        </member>
+        <member name="M:N1_SimuladorBancario.Principal.AvanzarMesSimulacion">
+            <summary>
+            Avanza en un mes la simulación.
+            </summary>
+        </member>
+        <member name="M:N1_SimuladorBancario.Principal.Extension1">
+            <summary>
+            Punto de extensión (1).
+            </summary>
+        </member>
+        <member name="M:N1_SimuladorBancario.Principal.Extension2">
+            <summary>
+            Punto de extensión (2).
+            </summary>
+        </member>
+        <member name="F:N1_SimuladorBancario.Principal.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:N1_SimuladorBancario.Principal.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:N1_SimuladorBancario.Principal.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:N1_SimuladorBancario.Programa">
+            <summary>
+            Clase estática para la inicialización de la aplicación.
+            </summary>
+        </member>
+        <member name="M:N1_SimuladorBancario.Programa.Main">
+            <summary>
+            Punto de entrada a la aplicación.
+            </summary>
+        </member>
+        <member name="T:N1_SimuladorBancario.Utilidades.Ayudante">
+            <summary>
+            Clase que contiene métodos de ayuda para los controles personalizados.
+            </summary>
+        </member>
+        <member name="M:N1_SimuladorBancario.Utilidades.Ayudante.InputBox(System.String,System.String,System.String@)">
+            <summary>
+            Captura la entrada del usuario por medio de un formulario simple.
+            </summary>
+            <param name="titulo">Título de la ventana de captura de texto.</param>
+            <param name="texto">Texto guía para la entrada del usuario.</param>
+            <param name="valor">Texto de captura.</param>
+            <returns></returns>
+        </member>
+        <member name="T:N1_SimuladorBancario.Utilidades.Mes">
+            <summary>
+            Representa un mes en la secuencia de la simulación.
+            </summary>
+        </member>
+        <member name="F:N1_SimuladorBancario.Utilidades.Mes.numeroMes">
+            <summary>
+            Representa el número de mes actual en la transición del tiempo.
+            </summary>
+        </member>
+        <member name="P:N1_SimuladorBancario.Utilidades.Mes.NumeroMes">
+            <summary>
+            Representa el número de mes actual en la transición del tiempo.
+            </summary>
+        </member>
+        <member name="M:N1_SimuladorBancario.Utilidades.Mes.#ctor(System.Int32)">
+            <summary>
+            Inicia una instancia de `Mes` con un valor.
+            </summary>
+            <param name="mes">Número del mes con el que se crea la instancia de mes.</param>
+        </member>
+        <member name="M:N1_SimuladorBancario.Utilidades.Mes.DiferenciaMeses(N1_SimuladorBancario.Utilidades.Mes)">
+            <summary>
+            Calcula la diferencia de dos meses.
+            </summary>
+            <param name="mes">Mes con el que se debe establecer la diferencia de número de meses.</param>
+            <returns></returns>
+        </member>
+        <member name="M:N1_SimuladorBancario.Utilidades.Mes.AvanzarMes">
+            <summary>
+            Avanza en una unidad el número de mes.
+            </summary>
+        </member>
+        <member name="T:N1_SimuladorBancario.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:N1_SimuladorBancario.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:N1_SimuladorBancario.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:N1_SimuladorBancario.Properties.Resources.Banco">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+            </summary>
+        </member>
+    </members>
+</doc>

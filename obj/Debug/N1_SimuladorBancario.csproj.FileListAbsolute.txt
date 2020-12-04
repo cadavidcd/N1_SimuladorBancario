@@ -1,0 +1,14 @@
+C:\Users\SHARLIE\Documents\N1_SimuladorBancario\bin\Debug\N1_SimuladorBancario.exe.config
+C:\Users\SHARLIE\Documents\N1_SimuladorBancario\bin\Debug\N1_SimuladorBancario.XML
+C:\Users\SHARLIE\Documents\N1_SimuladorBancario\bin\Debug\N1_SimuladorBancario.exe
+C:\Users\SHARLIE\Documents\N1_SimuladorBancario\bin\Debug\N1_SimuladorBancario.pdb
+C:\Users\SHARLIE\Documents\N1_SimuladorBancario\obj\Debug\N1_SimuladorBancario.csprojAssemblyReference.cache
+C:\Users\SHARLIE\Documents\N1_SimuladorBancario\obj\Debug\N1_SimuladorBancario.GUI.ControlDatosCliente.resources
+C:\Users\SHARLIE\Documents\N1_SimuladorBancario\obj\Debug\N1_SimuladorBancario.GUI.ControlOpciones.resources
+C:\Users\SHARLIE\Documents\N1_SimuladorBancario\obj\Debug\N1_SimuladorBancario.GUI.ControlSaldos.resources
+C:\Users\SHARLIE\Documents\N1_SimuladorBancario\obj\Debug\N1_SimuladorBancario.Principal.resources
+C:\Users\SHARLIE\Documents\N1_SimuladorBancario\obj\Debug\N1_SimuladorBancario.Properties.Resources.resources
+C:\Users\SHARLIE\Documents\N1_SimuladorBancario\obj\Debug\N1_SimuladorBancario.csproj.GenerateResource.cache
+C:\Users\SHARLIE\Documents\N1_SimuladorBancario\obj\Debug\N1_SimuladorBancario.csproj.CoreCompileInputs.cache
+C:\Users\SHARLIE\Documents\N1_SimuladorBancario\obj\Debug\N1_SimuladorBancario.exe
+C:\Users\SHARLIE\Documents\N1_SimuladorBancario\obj\Debug\N1_SimuladorBancario.pdb
